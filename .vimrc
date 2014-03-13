@@ -1,7 +1,5 @@
 " pathogen(vimプラグインの管理）の呼び出し
-"call pathogen#incubate()
-"call pathogen#helptags()
-execute pathogen#incubate()
+execute pathogen#infect()
 " 行番号を非表示 (number:表示)
 set number
 " ルーラーを表示 (ruler:表示)
