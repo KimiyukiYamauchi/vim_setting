@@ -1,6 +1,7 @@
 " pathogen(vimプラグインの管理）の呼び出し
-call pathogen#incubate()
-call pathogen#helptags()
+"call pathogen#incubate()
+"call pathogen#helptags()
+execute pathogen#incubate()
 " 行番号を非表示 (number:表示)
 set number
 " ルーラーを表示 (ruler:表示)
@@ -20,7 +21,7 @@ set showcmd
 " タイトルを表示
 set title
 " 画面を黒地に白にする (次行の先頭の " を削除すれば有効になる)
-colorscheme evening " (Windows用gvim使用時はgvimrcを編集すること)
+"colorscheme evening " (Windows用gvim使用時はgvimrcを編集すること)
 
 "---------------------------------------------------------------------------
 " ファイル操作に関する設定:
