@@ -12,6 +12,9 @@ set nolist
 set wrap
 " 常にステータス行を表示 (詳細は:he laststatus)
 set laststatus=2
+au InsertEnter * hi StatusLine guifg=DarkBlue guibg=DarkYellow gui=none ctermfg=Blue ctermbg=Yellow cterm=none 
+au InsertLeave * hi StatusLine guifg=White guibg=Black gui=none ctermfg=White ctermbg=Black cterm=none 
+
 " コマンドラインの高さ (Windows用gvim使用時はgvimrcを編集すること)
 set cmdheight=2
 " コマンドをステータス行に表示
