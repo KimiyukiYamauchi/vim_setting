@@ -1,5 +1,42 @@
-" pathogen(vimプラグインの管理）の呼び出し
-execute pathogen#infect()
+if has('vim_starting')
+   set nocompatible               " Be iMproved
+
+   " Required:
+   set runtimepath+=~/.vim/bundle/neobundle.vim/
+ endif
+
+ " Required:
+ call neobundle#rc(expand('~/.vim/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" My Bundles here:
+" NeoBundle 'Shougo/neosnippet.vim'
+" NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'tpope/vim-repeat'
+NeoBundle 'mattn/emmet-vim.git'
+" NeoBundle 'tpope/vim-fugitive'
+" NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'flazz/vim-colorschemes'
+NeoBundleLazy 'alpaca-tc/vim-endwise.git', {
+      \ 'autoload' : {
+      \   'insert' : 1,
+      \ }}
+
+" You can specify revision/branch/tag.
+" NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
+
 " 行番号を非表示 (number:表示)
 set number
 " ルーラーを表示 (ruler:表示)
@@ -43,10 +80,13 @@ nnoremap <silent> [b :bprevious<CR>
 nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]B :blast<CR>
+
 " 「%」による対応括弧へのカーソル移動機能を拡張
 source $VIMRUNTIME/macros/matchit.vim
+
 " neocomplcache（自動補完）を有効化
 let g:neocomplcache_enable_at_startup = 1
+
 " buftabs（常にバッファ番号を表示）の設定
 let buftabs_only_basename = 1
 let buftabs_in_statusline = 1
