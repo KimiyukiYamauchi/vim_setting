@@ -90,3 +90,35 @@ let g:neocomplcache_enable_at_startup = 1
 " buftabs（常にバッファ番号を表示）の設定
 let buftabs_only_basename = 1
 let buftabs_in_statusline = 1
+
+"emmetの設定
+let g:user_emmet_settings = {
+\  'lang' : 'ja',
+\  'html' : {
+\    'filters' : 'html',
+\    'indentation' : ''
+\  },
+\  'php' : {
+\    'extends' : 'html',
+\    'filters' : 'html,c',
+\  },
+\  'css' : {
+\    'filters' : 'fc',
+\  },
+\  'javascript' : {
+\    'snippets' : {
+\      'jq' : "$(function() {\n\t${cursor}${child}\n});",
+\      'jq:each' : "$.each(arr, function(index, item)\n\t${child}\n});",
+\      'fn' : "(function() {\n\t${cursor}\n})();",
+\      'tm' : "setTimeout(function() {\n\t${cursor}\n}, 100);",
+\    },
+\  },
+\ 'java' : {
+\  'indentation' : '  ',
+\  'snippets' : {
+\   'main': "public static void main(String[] args) {\n\t|\n}",
+\   'println': "System.out.println(\"|\");",
+\   'class': "public class | {\n}\n",
+\  },
+\ },
+\}
