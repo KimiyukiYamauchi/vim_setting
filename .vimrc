@@ -66,6 +66,8 @@ set title
 "
 " バックアップファイルを作成しない (次行の先頭の " を削除すれば有効になる)
 "set nobackup
+" オートインデント（autoindent:オートインデント有効）
+set noautoindent
 " tab押下で、何文字移動するか
 set tabstop=2
 " >>押下で、何文字移動するか
