@@ -131,5 +131,3 @@ let g:user_emmet_settings = {
 \  },
 \ },
 \}
-" HTML出力先(Windows)
-let g:ore_markdown_output_file = 'C:\temp\preview.html'
