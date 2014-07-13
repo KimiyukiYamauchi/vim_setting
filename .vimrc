@@ -26,6 +26,13 @@ NeoBundleLazy 'alpaca-tc/vim-endwise.git', {
       \ 'autoload' : {
       \   'insert' : 1,
       \ }}
+NeoBundle 'yaasita/ore_markdown', {
+      \ 'build' : {
+      \     'windows' : 'bundle install --gemfile .\bin\Gemfile',
+      \     'mac' : 'bundle install --gemfile ./bin/Gemfile',
+      \     'unix' : 'bundle install --gemfile ./bin/Gemfile'
+      \    },
+      \ }
 
 " You can specify revision/branch/tag.
 " NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -122,3 +129,5 @@ let g:user_emmet_settings = {
 \  },
 \ },
 \}
+" HTML出力先(Windows)
+let g:ore_markdown_output_file = 'C:\temp\preview.html'
