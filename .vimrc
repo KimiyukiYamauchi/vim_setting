@@ -27,7 +27,7 @@ NeoBundleLazy 'alpaca-tc/vim-endwise.git', {
       \   'insert' : 1,
       \ }}
 NeoBundle 'tpope/vim-commentary.git'
-NeoBundle 'kana/vim-textobj-entire'
+"NeoBundle 'kana/vim-textobj-entire'
 "NeoBundle 'yaasita/ore_markdown', {
 "      \ 'build' : {
 "      \     'windows' : 'bundle install --gemfile .\bin\Gemfile',
