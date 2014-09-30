@@ -26,13 +26,15 @@ NeoBundleLazy 'alpaca-tc/vim-endwise.git', {
       \ 'autoload' : {
       \   'insert' : 1,
       \ }}
-NeoBundle 'yaasita/ore_markdown', {
-      \ 'build' : {
-      \     'windows' : 'bundle install --gemfile .\bin\Gemfile',
-      \     'mac' : 'bundle install --gemfile ./bin/Gemfile',
-      \     'unix' : 'bundle install --gemfile ./bin/Gemfile'
-      \    },
-      \ }
+NeoBundle 'tpope/vim-commentary.git'
+NeoBundle 'kana/vim-textobj-entire'
+"NeoBundle 'yaasita/ore_markdown', {
+"      \ 'build' : {
+"      \     'windows' : 'bundle install --gemfile .\bin\Gemfile',
+"      \     'mac' : 'bundle install --gemfile ./bin/Gemfile',
+"      \     'unix' : 'bundle install --gemfile ./bin/Gemfile'
+"      \    },
+"      \ }
 
 " You can specify revision/branch/tag.
 " NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
