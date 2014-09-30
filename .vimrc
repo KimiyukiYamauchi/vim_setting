@@ -81,6 +81,8 @@ set tabstop=2
 set shiftwidth=2
 " 構文ハイライトを有効
 syntax on
+" 検索のマッチを強調憑依
+set hlsearch
 " キーカスタマイズ
 " 前が割り当てるキー、後ろが元のキーorコマンド
 cnoremap <C-p> <Up>
