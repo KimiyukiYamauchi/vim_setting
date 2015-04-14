@@ -6,7 +6,8 @@ if has('vim_starting')
  endif
 
  " Required:
- call neobundle#rc(expand('~/.vim/bundle/'))
+ " call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
 " Required:
@@ -45,6 +46,8 @@ filetype plugin indent on
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
 NeoBundleCheck
+
+call neobundle#end()
 
 " 行番号を非表示 (number:表示)
 set number
